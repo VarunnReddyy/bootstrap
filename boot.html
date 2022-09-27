@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-color:cyan;">
+
+<div class="container p-5 my-5  text-bg-dark" style="background-image: url('hello.jpg');">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p>
+  <p>The .container class provides a responsive fixed width container.</p>
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-light text-dark">Light</button>
+</div>
+
+<div class="row">
+    <div class="col-sm-3">.col-sm-3</div>
+    <div class="col-sm-3">.col-sm-3</div>
+    <div class="col-sm-3">.col-sm-3</div>
+    <div class="col-sm-3">.col-sm-3</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">.col-sm-4</div>
+    <div class="col-sm-8">.col-sm-8</div>
+  </div>
+
+  <div class="container mt-3">
+    <h2>Background Color with Contrasting Text Color</h2>
+    <p class="text-bg-primary">This text is important.</p>
+    <p class="text-bg-success">This text indicates success.</p>
+    <p class="text-bg-info">This text represents some information.</p>
+    <p class="text-bg-warning">This text represents a warning.</p>
+    <p class="text-bg-danger">This text represents danger.</p>
+    <p class="text-bg-secondary">Secondary background color.</p>
+    <p class="text-bg-dark">Dark grey background color.</p>
+    <p class="text-bg-light">Light grey background color.</p>
+  </div>
+
+
+  <div>
+  <h2>Striped Rows</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p>            
+  <!-- <table class="table table-striped"> -->
+  <!-- <table class="table table-bordered"> -->
+    <table class="table table-hover">
+        <!-- <table class="table"> -->
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>varun</td>
+        <td>reddy</td>
+        <td>varun@example.com</td>
+      </tr>
+      <tr>
+        <td>sid</td>
+        <td>r</td>
+        <td>sid@example.com</td>
+      </tr>
+      <tr>
+        <td>ranjith</td>
+        <td>rayula</td>
+        <td>ranjitj@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <img src="hello.jpg" class="rounded" class="float-start" width="200px" height="200px">
+  <img src="hello.jpg" class="rounded-circle" class="float-middle" width="200px" height="200px">
+  <img src="hello.jpg" class="img-thumbnail" class="float-end" width="200px" height="200px">
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" >
+      image type
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_img_rounded&stacked=h">rounded</a></li>
+      <li><a class="dropdown-item" href="https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_img_circle&stacked=h">rounded-circle</a></li>
+      <li><a class="dropdown-item" href="https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_img_thumbnail&stacked=h">img thumbnail</a></li>
+    </ul>
+  </div>
+
+</div>
+<h1>bootstrap badges <span class="badge text-bg-dark">New</span></h1>
+<!-- <div class="dropdown">
+  <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown">
+    height of the missing one(ft)
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item">below 4.0</a></li>
+    <li><a class="dropdown-item">"4.0-4.5"</a></li>
+    <li><a class="dropdown-item">"4.6-4.11"</a></li>
+    <li><a class="dropdown-item">"5.0-5.5"</a></li>
+    <li><a class="dropdown-item">"5.6-5.11"</a></li>
+    <li><a class="dropdown-item">"6.0-6.5"</a></li>
+    <li><a class="dropdown-item">"above 6.5"</a></li>
+  </ul>
+
+</div> -->
+<div class="container mt-3">
+  <h2>Data List</h2>
+  <form action="/action_page.php">
+    <label for="height" class="form-label">height of the missing person(ft):</label>
+    <input class="form-control" list="heights" name="height" id="height">
+    <datalist id="heights">
+      <option value="below 4.0">
+      <option value="4.0-4.5">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+      <option value="Safari">
+      <option value="Safari">
+    </datalist>    
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
